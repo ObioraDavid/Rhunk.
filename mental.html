@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RHUNKS - Mental Health Chatbot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="mental_script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="profile">
+        <div class="profile-img bot-animation">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="profile-info">
+          <h3>RHUNKS</h3>
+          <p>Mental Health Chatbot</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h4>About Me</h4>
+        <p>RHUNKS is an intelligent chatbot designed to predict and diagnose mental health issues through natural
+          language understanding. It analyzes user input to provide insights, support, and guidance while promoting
+          mental well-being. Though not a replacement for professional help, RHUNKS serves as a first step in
+          recognizing concerns and encouraging users to seek the right support..</p>
+      </div>
+
+      <div class="mood-meter">
+        <h4>How are you feeling today?</h4>
+        <div class="mood-icons">
+          <div class="mood-icon sad">
+            <i class="far fa-frown"></i>
+            <p>Not Great</p>
+          </div>
+          <div class="mood-icon neutral">
+            <i class="far fa-meh"></i>
+            <p>Okay</p>
+          </div>
+          <div class="mood-icon happy">
+            <i class="far fa-smile"></i>
+            <p>Good</p>
+          </div>
+        </div>
+      </div>
+
+      <h4 style="margin: 20px 0 10px; color: var(--primary);">Helpful Resources</h4>
+      <div class="resources">
+        <div class="resource-item">
+          <i class="fas fa-book"></i>
+          <p>Mental Health Articles</p>
+        </div>
+        <div class="resource-item">
+          <i class="fas fa-heart"></i>
+          <p>Self-Care Tips</p>
+        </div>
+        <div class="resource-item">
+          <i class="fas fa-phone"></i>
+          <p>Crisis Helplines</p>
+        </div>
+        <div class="resource-item">
+          <i class="fas fa-user-md"></i>
+          <p>Find a Therapist</p>
+        </div>
+        <div class="resource-item">
+          <i class="fas fa-brain"></i>
+          <p>Mindfulness Exercises</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-section">
+      <div class="chat-header">
+        <div class="chat-title">
+          <h2>RHUNKS</h2>
+          <p>Online • Always here to help</p>
+        </div>
+        <div class="chat-actions">
+          <button><i class="fas fa-volume-up"></i></button>
+          <button><i class="fas fa-cog"></i></button>
+        </div>
+      </div>
+
+      <div class="chat-messages" id="chat-messages">
+        <div class="message bot">
+          <div class="avatar">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="message-content">
+            <div class="message-bubble">
+              Welcome to RHUNKS, your mental health prediction and diagnosis chatbot.
+            </div>
+            <div class="message-time">Just now</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <button class="emoji-btn"><i class="far fa-smile"></i></button>
+        <div class="input-field">
+          <textarea id="user-input" placeholder="Type a message..." rows="1"></textarea>
+        </div>
+        <button class="send-btn" id="send-btn"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
